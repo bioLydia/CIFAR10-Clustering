@@ -89,10 +89,6 @@ def main():
     df = pd.DataFrame({'index': indices, 'label': clusters})
     df.to_csv('clustered_images.csv', index=False)
 
-    # # 保存聚类结果
-    # train_labels = clusters[:len(trainset)]
-    # test_labels = clusters[len(trainset):]
-
     # # 5. 显示聚类样本图像
     # for cluster in range(n_clusters):
     #     plt.figure(figsize=(10, 5))
